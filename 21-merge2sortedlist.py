@@ -20,7 +20,6 @@ class Solution(object):
             tail= tail.next # moving the pointer to the next value in the dummy list
         if l1 or l2: # if l1 or l2 are null or empty and just one list exists
             tail.next = l1 or l2
-        return dummy.next 
+        return dummy.next  # dummy.next will get rid of the first value which is 0, we set that value at the start using ListNode()
 
-sol = Solution()
-print(sol.merge([1,2,4],[1,3,5]))
+print(Solution().merge([1,2,4],[1,3,5]))

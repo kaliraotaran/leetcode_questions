@@ -5,9 +5,9 @@ class Solution :
         newstr = ''
 
         for c in s:
-            if c.isalnum():
+            if c.isalnum(): # if it is all alpha numeric 
                 newstr +=c.lower()
         return newstr == newstr[::-1]
     
 sol = Solution()
-print(sol.valid('aman'))
+print(sol.valid('ana'))
