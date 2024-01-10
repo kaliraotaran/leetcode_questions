@@ -8,5 +8,15 @@ class Solution:
             magazine = magazine.replace(i ,'', 1) # this means that it is present and we want to bascially delete it, 
                                     # if we delete the whole string, it means all letters we're present in magazine and return true
         return True
+
+        # or
+        # ransomNote = list(ransomNote)
+        # magazine = list(magazine)
+        # for char in ransomNote:
+        #     if char in magazine:
+        #         magazine.remove(char)
+        #     else:
+        #         return False
+        # return True
     
 print(Solution().cann('aab','aaxxb'))

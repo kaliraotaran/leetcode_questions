@@ -16,3 +16,23 @@ class Solution:
         return True if not stack else  False
 sol = Solution()
 print(sol.isvalid("(){}"))
+
+# or
+#   stack = []
+        # for c in s:
+        #     if c == "(" or c == "[" or c == "{":
+        #         stack.append(c)
+        #     elif len(stack) == 0:
+        #         return False
+        #     else:
+        #         stackC = stack.pop()
+        #         if c == ")" and stackC == "(":
+        #             continue
+        #         if c == "]" and stackC == "[":
+        #             continue
+        #         if c == "}" and stackC == "{":
+        #             continue
+        #         return False
+        # if len(stack) == 0:
+        #     return True
+        # return False
