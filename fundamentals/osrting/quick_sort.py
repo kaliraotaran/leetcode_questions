@@ -6,7 +6,7 @@ def quick(list):
     if length <=1:
         return list
     else:
-        pivot = list.pop() # we assign the last elemnt oflist to pivot
+        pivot = list.pop() # we assign the last elemnt of list to pivot
     
     item_greater = []
     item_lower = []
