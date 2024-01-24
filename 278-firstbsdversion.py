@@ -1,4 +1,16 @@
 # https://leetcode.com/problems/first-bad-version/description/
+
+'''
+here, we apply binary search
+we have n updates or realeases and its bascially a list from 1-n
+we have the isBadVersion(mid) func to tell us if teh veresion we're at is bad or not
+if it is , then the new high is mid-1.
+else its low = mid+1
+the low value will be the answer not the mid value
+'''
+
+
+
 # The isBadVersion API is already defined for you in leetcode(not in this)
 # def isBadVersion(version: int) -> bool: 
 # (this is bascially binary search)
