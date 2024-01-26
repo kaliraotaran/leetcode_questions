@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/climbing-stairs/submissions/1139693594/
-
+'''
+this is sorta like the fibb series, we first take an initial list with 2 1's ,
+we then add the last 2 elements in the list for n times
+then we print the last element in the list,
+'''
 class Solution:
     def climb(self, n:int)->int:
         buf = [1,1]

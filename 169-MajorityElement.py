@@ -1,5 +1,9 @@
 # https://leetcode.com/problems/majority-element/submissions/1149724153/
+'''
+we simply jsut sort the list and then we return teh element in the middle 
+by applying floor division of the number of elements by 2
 
+'''
 
 class Solution:
     def majorityElement(self, nums: list[int]) -> int:
@@ -22,3 +26,6 @@ class Solution:
         nums[2] - returns 3 
 
         '''
+sol = Solution()
+print(sol.majorityElement([1,1,2,3]))
+ 
