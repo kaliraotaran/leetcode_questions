@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/linked-list-cycle/description/
 
 '''
+
 this is a simple slow and fast pointer problem 
 slow pointer moves one step at a time, while the fast pointer moves two 
 steps at a time.
@@ -15,6 +16,10 @@ else we return false
 
 
 '''
+
+
+
+
 
 
 class ListNode:

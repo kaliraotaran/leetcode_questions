@@ -8,6 +8,17 @@ element in the list
 if their sum is the needed target, we're gonna return their indexes in the list
 
 '''
+
+
+
+
+
+
+
+
+
+
+
 class Solution:
     def twosum(self,numbers:list, target: int)->list[int]:
         l = 0

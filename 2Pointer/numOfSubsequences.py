@@ -25,8 +25,8 @@ class Solution:
         result = 0
         right = len(nums)-1
         left = 0
-        nums.sort
-        mod = (2**9)+7
+        nums.sort()
+        mod = (10**9)+7
 
         while left<=right:
             if nums[left]+nums[right] > target:
@@ -35,5 +35,10 @@ class Solution:
                 result += pow(2, (right -left), mod)
                 left +=1
         return result % mod
+    
+
+
+
+
 sol = Solution()
 print(sol.numseq([3,5,6,7], 9))
