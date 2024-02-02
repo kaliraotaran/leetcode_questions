@@ -1,4 +1,7 @@
 # https://leetcode.com/problems/product-of-array-except-self/submissions/1133215642/
+'''
+in this question we 
+'''
 
 class Solution:
     def pro(self, nums: list[int])->list[int]:

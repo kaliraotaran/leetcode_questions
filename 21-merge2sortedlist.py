@@ -1,4 +1,10 @@
 # https://leetcode.com/problems/merge-two-sorted-lists/submissions/1138729229/
+'''
+we basically have to start with adding the head of the first list and then the head of the next list
+and then th enext element of first list (if it is smaller than next element of second list)
+we keep on doing this until there is only one list with all the nodes in sorted form 
+
+'''
 
 class ListNode(object):
     def __init__(self, val=0):
