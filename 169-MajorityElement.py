@@ -17,7 +17,8 @@ class Solution:
         '''the second approach'''
         nums.sort()
         n = len(nums)
-        return nums[n//2]
+        # return nums[n//2]
+        return nums[(len(nums)//2)]
         '''
         [2,3,2,3,3]
         [2,2,3,3,3] - teh sorted list
@@ -27,5 +28,5 @@ class Solution:
 
         '''
 sol = Solution()
-print(sol.majorityElement([1,1,2,3]))
+print(sol.majorityElement([1,1,2,2,2]))
  

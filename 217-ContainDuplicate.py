@@ -2,7 +2,7 @@
 '''
 firstly, we'll sort the list
 if the len of hte list is 1, there's no way that there're duplicate nums
-we then start eh loop from teh second element in the list and compare it with the prev element
+we then start a loop from teh second element in the list and compare it with the prev element
 if they are the same, means there's a duplicate
    ( you can also just normally iterate the list from beg to end and compare with the +1 element)
 '''
@@ -18,3 +18,5 @@ class Solution:
                 return True
          
         return False
+sol = Solution()
+print(sol.containsDuplicate([1,2,3,4]))
