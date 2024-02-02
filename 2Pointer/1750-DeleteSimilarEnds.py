@@ -27,7 +27,7 @@ class Solution:
         left = 0
         right = len(s)-1
         currentchar = ''
-        while left<right:
+        while left<=right:
             if (s[left] == s[right] and left !=right):
                 currentchar = s[left]
                 right -=1

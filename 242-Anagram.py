@@ -3,7 +3,10 @@
 
 from collections import Counter
 
-
+'''
+NOTE - we use sorted(s) to sort elements in a string
+and nums.sort() to sort the elements in a list
+'''
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         

@@ -7,10 +7,10 @@ and the set it to the maxprofit varaible(teh value we set is the maximum of curr
 else: 
 the value of left is larger than the right so we move the pointer at left to the position where right pointer is
 and then we also keep iterating the right pointer by one anyways
-we then return the maximum porfit
-
+we then return the maximum profit
 
 '''
+
 
 class Solution:
     def maxProfit(self, prices:list[int])->int:
