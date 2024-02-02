@@ -16,18 +16,21 @@ and decrement right
 
 class Solution:
     def reverse(self, s:list[str]):
-        left = 0
-        right = len(s)-1
-        while left<=right:
-            s[left],s[right] = s[right],s[left]
-            left += 1
-            right -=1
-        return s
-    
-
-
-
-    
+        # left = 0
+        # right = len(s)-1
+        # while left<=right:
+        #     s[left],s[right] = s[right],s[left]
+        #     left += 1
+        #     right -=1
+        # return s 
+        
+        # this was an easier solution that leetcode wouldnt accept
+        newlist = s[::-1]
+        return newlist
 sol = Solution()
-s = ['t','a','r','a','n']
-print(sol.reverse(s))
+print(sol.reverse(["h","e","l","l","o"]))
+    
+
+
+
+     
