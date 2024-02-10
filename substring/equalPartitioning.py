@@ -18,4 +18,4 @@ class Solution:
             cur = self.partition(s[i:])
             for j in range(len(cur)):
                 ans.append([s[:i]]+cur[j])
-        return anslee
+        return ans
