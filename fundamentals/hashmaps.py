@@ -12,11 +12,18 @@ city["New York"].append("Empire State Building")
 # or
 cities = ["calgary", "BC", "Toronto"]
 city["canada"]+= cities
-print(city)
+# print(city)
 
 
 # retriving data
-# hashmap.keys()
-# hashmap.values()
+# hashmap.keys() - return all the keys in the list
+# hashmap.values()  - returns all the values o fthe keys in the list
 # hashmaps.items() - return combination of keys as well as the values
+
+mydict = {}
+# or could use mydict = defaultdict(list)
+cities = ['LA', 'LV', 'NY']
+mydict['US'] = [] # initialized a key  with empty list
+mydict['US'] += cities
+print(mydict.items())
 
