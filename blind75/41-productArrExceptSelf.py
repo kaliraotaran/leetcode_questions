@@ -1,6 +1,7 @@
-# https://leetcode.com/problems/product-of-array-except-self/submissions/1133215642/
+# 
 '''
-in this question we 
+https://leetcode.com/problems/product-of-array-except-self/submissions/1133215642/
+
 '''
 
 class Solution:

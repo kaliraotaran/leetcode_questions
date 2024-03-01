@@ -5,7 +5,7 @@ https://leetcode.com/problems/first-unique-character-in-a-string/
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         hashmap = {}
-        listt = list(s)
+       
         for i in s:
             if i not in hashmap:
                 hashmap[i] =1

@@ -1,4 +1,5 @@
 '''
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/submissions/1190831163/
 we gonna first initalize 2 varaiable that are situated at 2 corners of the list(beg and end)
 we're gonna keep iterating until the left side is still less than the right side pointer
 we add the elements of the list at where the pointers currently are
@@ -8,15 +9,6 @@ element in the list
 if their sum is the needed target, we're gonna return their indexes in the list
 
 '''
-
-
-
-
-
-
-
-
-
 
 
 class Solution:

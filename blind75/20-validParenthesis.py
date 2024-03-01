@@ -15,7 +15,7 @@ class Solution:
                 stack.append(c)
         return True if not stack else  False
 sol = Solution()
-print(sol.isvalid("(){}"))
+print(sol.isvalid("(){))))()"))
 
 # or
 #   stack = []
