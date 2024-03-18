@@ -24,5 +24,29 @@ class Solution:
     
 
 
+# recursive on codeing ninja
+    
+'''
+    Following is the Binary Tree node structure:
+    class TreeNode:
+        def __init__(self, data=0, left=None, right=None):
+            self.data = data
+            self.left = left
+            self.right = right
+'''
 
+def inorder(root, answer):
+    if root == None:
+        return 
+    inorder(root.left, answer)
+    answer.append(root.data)
+    inorder(root.right, answer)
+
+def getInOrderTraversal(root):
+    # Write your code here.
+    answer = []
+    inorder(root, answer)
+    return answer
+
+    
     
