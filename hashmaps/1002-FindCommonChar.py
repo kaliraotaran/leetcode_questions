@@ -9,7 +9,7 @@ then in a seperate for loop (it loops from the second word to the last)
     we create a new seperate hashmap
     we then iterate through each character of the a word
         if the character was already in the second hashmap and if the number of characters in 
-                original hash is less than the num. of characters in teh original hash:
+                new hash is less than the num. of characters in teh original hash:
             we then incremnt the value of that character in the hash by 1
     in end of inner loop, we assign the value of new hash to the original hash
 
