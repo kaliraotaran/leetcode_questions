@@ -5,7 +5,7 @@ we first create a variable and make it a set()
 we loop through the list with the left pointer starting at left and the right pointer being used as the looping
 variable, 
 we see if the current char at right is in the set():
-    if it is , we remove it from the set and slide teh window to the left by moving left pointer by one
+    if it is , we remove it from the set and slide teh window to the right by moving left pointer by one
 else we're gonna add the current element at right position to the set()
 the result and the maximum between the result and length between the left and right pointer(the window size)
 
