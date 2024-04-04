@@ -1,5 +1,9 @@
 '''
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/?envType=study-plan-v2&envId=top-interview-150
+
+it is moving through the list and it removes duplicate element at the left of the list
+and it only executes the if statement if the element at the left is not the same as the 
+element at the right of the list
 '''
 
 class Solution:
