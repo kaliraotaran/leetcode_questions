@@ -27,3 +27,8 @@ class Solution:
                     q.append(n.right)
             d+=1
         return d
+    
+'''
+method 2- here we use recursion where we recursively go to left or right of tree and add 1 to the answer
+and in the end it will return the answer
+'''

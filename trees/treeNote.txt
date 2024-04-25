@@ -6,9 +6,9 @@ for Inorder -
         stack.append(root)
         root = root.left # here we moved to the left first cause its inorder traversal (Left-Root-Right)
     else:
-    node = stack.pop() # we got the root that we just put into the stack
-    res.append(node.val) # here we actually added the value of hte node to another list
-    root = node.right  # now we will go to the next level which is the right child of our current node
+        node = stack.pop() # we got the root that we just put into the stack
+        res.append(node.val) # here we actually added the value of hte node to another list
+        root = node.right  # now we will go to the next level which is the right child of our current node
 
 
 
