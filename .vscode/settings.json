@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "__locale": "cpp"
-    }
+        "__locale": "cpp",
+        "__tree": "cpp",
+        "map": "cpp",
+        "vector": "cpp",
+        "iosfwd": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
