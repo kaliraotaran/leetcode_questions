@@ -17,4 +17,11 @@ class solution:
             temp = nums.pop()
             nums.insert(0,temp)
             i+=1
+        
+        # second approach
+        # remove elements k times from end of list and then insert at the 0th index
+
+        for i in range(k):
+            a = nums.pop()
+            nums.insert(0,a)
             
