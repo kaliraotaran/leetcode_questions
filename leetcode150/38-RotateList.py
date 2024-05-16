@@ -41,3 +41,32 @@ class Solution:
             current = current.next
         
         return head.next
+
+###########################
+
+        if not head:
+            return head
+            
+        arr = []
+        while head:
+            arr.append(head.val)
+            head = head.next
+        n = len(arr)   
+        if k >=n:
+            k = k%n
+
+        
+        arr1 = arr[n-k:n]
+        arr2 = arr[0:n-k]
+        arr3 = arr1+arr2
+         
+
+        newhead = None
+        for i in arr3:
+            if newhead is None:
+                newhead = ListNode(i)
+                b = newhead
+            else:
+                b.next = ListNode(i)
+                b = b.next
+        return newhead
