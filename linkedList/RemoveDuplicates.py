@@ -36,3 +36,20 @@ class Solution:
                 b.next = ListNode(i)
                 b = b.next
         return newhead
+    
+    ######################## OR ############################
+        arr = []
+        while head:
+            if head.val not in arr:
+                arr.append(head.val)
+            head = head.next
+        newhead = None
+
+        for i in arr:
+            if newhead is None:
+                newhead = ListNode(i)
+                b = newhead
+            else:
+                b.next = ListNode(i)
+                b = b.next
+        return newhead

@@ -1,5 +1,8 @@
 
 '''
+
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+
 here, we also use some knowloedge from teh 2 ptr method, 
 we set the left ptr at 0 and teh right at 1 
 and we keep iterating the list as long as the right ptr doesn't exceed the len. of list
