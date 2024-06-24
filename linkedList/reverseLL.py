@@ -10,17 +10,42 @@ put it into an array for furthur operations
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+# class Solution:
+#     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+#         nodeList = []
+#         while head:
+#             nodeList.append(head)
+#             head = head.next
+
+#         leng = len(nodeList)
+#         for i in range(leng-1, 0, -1):
+#             nodeList[i].next = nodeList[i-1]
+#         if nodeList:
+#             nodeList[0].next = None
+#             return nodeList[-1]
+#         return None
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        nodeList = []
+        arr = []
         while head:
-            nodeList.append(head)
+            arr.append(head.val)
             head = head.next
-
-        leng = len(nodeList)
-        for i in range(leng-1, 0, -1):
-            nodeList[i].next = nodeList[i-1]
-        if nodeList:
-            nodeList[0].next = None
-            return nodeList[-1]
-        return None
+        arr = arr[::-1]
+        
+        newhead = None
+        for i in arr:
+            if newhead is None:
+                newhead = ListNode(i)
+                b = newhead
+            else:
+                b.next = ListNode(i)
+                b = b.next
+        return newhead
+        
