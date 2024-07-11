@@ -32,3 +32,10 @@ class Solution:
         for i , j in c.items():
             if j>1:
                 return i
+            
+#################### time excedded
+            for i in range(len(nums)):
+            c = nums.pop(i)
+            if c in nums:
+                return c
+        return -1
