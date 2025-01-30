@@ -25,7 +25,8 @@ class Solution:
             if slow ==slow2:
                 break
         return slow
-      
+
+'''
 ########### antoehr method
 
         c = Counter(nums)
@@ -39,3 +40,4 @@ class Solution:
             if c in nums:
                 return c
         return -1
+'''
