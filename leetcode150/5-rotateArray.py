@@ -25,3 +25,31 @@ class solution:
             a = nums.pop()
             nums.insert(0,a)
             
+
+              k = k%len(nums)
+        i=0
+        j =len(nums)-1
+        while i<j:
+            nums[i] , nums[j] = nums[j], nums[i]
+            i+=1
+            j-=1
+        ## we have reversed the whole string
+        ## now we reverse the first k section
+        kl = 0
+        kr = k-1
+        while kl<=kr:
+            nums[kl], nums[kr] = nums[kr], nums[kl]
+            kl+=1
+            kr-=1
+        lk = k
+        rk = len(nums)-1
+        while lk<rk:
+            nums[lk], nums[rk] = nums[rk], nums[lk]
+            rk-=1
+            lk+=1
+
+            ### we have the think of it as reversing 
+            ## the array
+            ## first we reverse teh array as is, then we segment
+            ## the array into 2 pieces, 0-k, k+1, n
+            ##then we reserve those two segments
